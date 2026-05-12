@@ -1,0 +1,49 @@
+{
+    "name": "yiisoft/yii2-app-basic",
+    "description": "Yii 2 Basic Application Template",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "minimum-stability": "stable",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "require": {
+        "php": ">=8.0.0",
+        "yiisoft/yii2": "~2.0.14",
+        "yiisoft/yii2-bootstrap5": "~2.0.0",
+        "bower-asset/jquery": "3.7.*@stable | 3.6.*@stable | 3.5.*@stable",
+        "bower-asset/inputmask": "~5.0",
+        "bower-asset/punycode": "~1.3"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "~2.1.0",
+        "yiisoft/yii2-gii": "~2.2.0",
+        "yiisoft/yii2-faker": "~2.0.0",
+        "codeception/codeception": "^5.0",
+        "codeception/module-yii2": "^1.1",
+        "codeception/module-asserts": "*",
+        "codeception/module-filesystem": "*",
+        "codeception/lib-innerbrowser": "*",
+        "codeception/lib-web": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "composer/installers": true
+        }
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm-asset",
+            "bower-asset-library": "vendor/bower-asset"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": ""
+        }
+    }
+}
